@@ -15,6 +15,8 @@ int main(void)
 
 	first_letter = 97;
 	last_letter = 122;
+	upper_first_letter = 65;
+	upper_last_letter = 90;
 	while (first_letter <= last_letter)
 	{
 		putchar(first_letter);
