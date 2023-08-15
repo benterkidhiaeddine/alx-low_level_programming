@@ -58,7 +58,8 @@ void times_table(void)
 			{
 			_print_number(result, 0);
 			}
-			_putchar(',');
+			if (multiplier != 9)
+				_putchar(',');
 			multiplier++;
 		}
 		_putchar('\n');
