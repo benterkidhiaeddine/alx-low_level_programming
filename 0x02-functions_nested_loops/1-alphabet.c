@@ -1,14 +1,13 @@
 #include "main.h"
 
-/**
- *  main - Entry point  prints the alphabet in
- *  lower case using _putcahr onyl followed by a new line
- *
- *  Return: always return 0 (Sucess)
- *
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
+void print_alphabet()
+{	
+	char first = 97;
+	while(first != 123)
+	{
+		_putchar(first);
+		first++;
+	}
+	_putchar('\n');
+
 }
