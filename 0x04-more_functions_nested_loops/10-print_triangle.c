@@ -24,6 +24,11 @@ void _print_symbol(int n, char c)
 */
 void print_triangle(int n)
 {
+	if (n <= 0)
+	{
+		_putchar('\n');
+		return;
+	}
 	int i;
 
 	for (i = 1; i <= n; i++)
