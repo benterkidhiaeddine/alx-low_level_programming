@@ -37,7 +37,7 @@ void puts_half(char *s)
 	}
 	else
 	{
-		beginindx = (len - 1) / 2;
+		beginindx = (len - 1) / 2 + 1;
 	}
 	/* set the begining of the pointer in the arr*/
 	s = s + beginindx;
