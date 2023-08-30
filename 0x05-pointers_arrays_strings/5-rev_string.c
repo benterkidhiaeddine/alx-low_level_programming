@@ -34,7 +34,7 @@ void rev_string(char *s)
 	endindx = size - 1;
 	i = 0;
 
-	while (i < (endindx / 2))
+	while (i <= (endindx / 2))
 	{
 		char tmp;
 
