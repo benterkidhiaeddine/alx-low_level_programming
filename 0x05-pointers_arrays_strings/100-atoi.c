@@ -41,7 +41,7 @@ int _atoi(char *s)
 {
 	int i;
 	int number_sign;
-	int sum;
+	unsigned int sum;
 	int len;
 
 	sum = 0;
