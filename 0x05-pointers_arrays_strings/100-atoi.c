@@ -7,7 +7,7 @@
 */
 int _isdigit(char c)
 {
-	if (c >= 48 && c <= 57)
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
@@ -52,8 +52,6 @@ int _atoi(char *s)
 		if (!_isdigit(s[i]))
 		{
 			if (s[i] == '-')
-				number_sign--;
-			else if (s[i] == '+')
 				number_sign++;
 		}
 		else
@@ -63,7 +61,7 @@ int _atoi(char *s)
 	{
 		sum = sum * 10 + (s[i] - '0');
 	}
-	if (number_sign < 0)
+	if (number_sign % 2 != 0)
 		return (-1 * sum);
 	return (sum);
 }
