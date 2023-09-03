@@ -35,6 +35,9 @@ int main(int argc, char **argv)
 	coins += cents / 5;
 	cents = cents - ((cents / 5) * 5);
 
+	coins += cents / 2;
+	cents = cents - ((cents / 2) * 2);
+	
 	coins += cents;
 
 	printf("%d\n", coins);
