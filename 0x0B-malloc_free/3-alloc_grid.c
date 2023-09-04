@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-/*
+/**
 * alloc_grid - creates a 2d array of 0s.
 * @width: int - the width of the grid.
 * @height: int - the height of the grid.
