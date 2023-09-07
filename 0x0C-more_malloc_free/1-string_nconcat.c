@@ -35,7 +35,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1_len = _strlen(s1);
 	if (s2 == NULL)
 		s2_len = 0;
-	s2_len = _strlen(s2);
+	else
+		s2_len = _strlen(s2);
 
 	/*make sure n can't exceed s2_len*/
 	if (n > s2_len)
@@ -48,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	i = 0;
 	tracker = 0;
-	while (s1[i] != '\0')
+	while (i < s1_len)
 	{
 		result[i] = s1[i];
 		i++;
