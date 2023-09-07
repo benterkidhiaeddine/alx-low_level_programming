@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
 * malloc_checked - create the amount of memory and returns the void pointer
 * to it and handles faliure
@@ -13,10 +11,8 @@ void *malloc_checked(unsigned int b)
 	void *ptr;
 
 	ptr = malloc(b);
-
 	if (ptr == NULL)
-	{
 		exit(98);
-	}
+	
 	return (ptr);
 }
