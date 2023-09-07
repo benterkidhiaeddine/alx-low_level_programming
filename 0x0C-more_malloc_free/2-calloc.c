@@ -8,16 +8,27 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *result;
+	void *final;
+	unsigned int *result;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	result = malloc(nmemb * size);
-	if (result == NULL)
+	final = malloc(nmemb * size);
+	if (final == NULL)
 	{
 		return (NULL);
 	}
-	return (result);
+	result = final;
+
+	i = 0;
+	while (i < nmemb)
+	{
+		result[i] = 0;
+		i += 4;
+	}
+
+	return (final);
 }
