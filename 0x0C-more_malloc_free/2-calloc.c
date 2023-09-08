@@ -1,29 +1,26 @@
 #include "main.h"
+
 /**
-* _calloc - allocates nmemb number of elemennts of size size
-* @nmemb: unsigned int - number of membres of cosen size we want to assing
-* memory to
-* @size: unsigned int - size of element
-* Return: void* - pointer to the memory allocation
-*/
+ * _calloc - allocate memory for an array
+ * @nmemb: number of elements in an array
+ * @size: size on the array
+ * Return: pointer string
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *final;
 	unsigned int i;
+	char *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	final = malloc(nmemb * size);
 
-	if (final == NULL)
+	p = malloc(nmemb * size);
+
+	if (p == NULL)
 		return (NULL);
 
-	i = 0;
-	while (i < nmemb)
-	{
-		final[i] = 0;
-		i++;
-	}
+	for (i = 0; i < nmemb * size; i++)
+		*(p + i) = 0;
 
-	return (final);
+	return (p);
 }
