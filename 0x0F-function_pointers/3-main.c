@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		printf("Incorrect number of args Error\n");
+		printf("Error\n");
 		return (98);
 	}
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	op_func = get_op_func(operator);
 	if (op_func == NULL)
 	{
-		printf("Invalid operator Error\n");
+		printf("Error\n");
 		return (99);
 	}
 
