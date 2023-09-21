@@ -2,7 +2,6 @@
 void first(void) __attribute__((constructor));
 /**
 * first - executes before main
-* Return: void
 */
 void first(void)
 {
